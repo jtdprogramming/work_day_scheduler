@@ -6,10 +6,11 @@ body {
 
 /* center and bold currentDay */
 #currentDay {
+  margin-top: 50px;
   font-size: xx-large;
   text-align: center;
   font-weight: bolder;
-  margin-bottom: 25px;
+  color:#073a00;
 }
 
 /* bolded font */

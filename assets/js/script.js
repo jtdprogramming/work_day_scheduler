@@ -57,7 +57,7 @@ function eventScheduler() {
 function saveEvent() {
   //set key id as btn[i] and value is the previous element's(textarea) value
   //jQuery .prev() selector reference https://api.jquery.com/prev/#prev-selector
-  localStorage.setItem($(this).attr("id"), $(this).prev().val());
+  localStorage.setItem( $(this).attr("id"), $(this).prev().val() );
 };
 
 // call functions on page load
