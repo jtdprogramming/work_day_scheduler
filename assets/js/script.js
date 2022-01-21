@@ -3,10 +3,10 @@
 
 // jQuery to set container value
 var container = $(".container");
-// subtract 9 from value for ease of use in for loop
+var currentDay = moment().format("dddd MMMM Do" + ", " + "YYYY");
+// subtract 9 from currentHour value for ease of use in for loop
 var currentHour = moment().hour() - 9;
 var workHour = ["9AM", "10AM", "11AM", "12PM", "1PM", "2PM", "3PM", "4PM", "5PM"]
-var currentDay = moment().format("dddd MMMM Do" + ", " + "YYYY");
 
 // arrow function to display current date
 var displayDate = () => {
@@ -55,7 +55,6 @@ function eventScheduler() {
 
 // save event on save button click
 function saveEvent() {
-  console.log(this)
   //set key id as btn[i] and value is the previous element's(textarea) value
   //jQuery .prev() selector reference https://api.jquery.com/prev/#prev-selector
   localStorage.setItem($(this).attr("id"), $(this).prev().val());
