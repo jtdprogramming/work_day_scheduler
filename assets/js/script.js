@@ -1,8 +1,6 @@
 //work_day_scheduler - James D.
 //comment heavily for reference and learning purposes
 
-
-
 // jQuery to set container value
 var container = $(".container");
 // subtract 9 from value for ease of use in for loop
@@ -63,7 +61,8 @@ function saveEvent() {
   localStorage.setItem($(this).attr("id"), $(this).prev().val());
 };
 
-// call function on page load
+// call functions on page load
+displayDate();
 eventScheduler();
 
 // call function to save the event on click
